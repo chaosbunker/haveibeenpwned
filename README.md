@@ -49,12 +49,7 @@ Commands:
 
 Example Commands
 ----------------
-breaches
-breach Adobe
-breachedaccount test@example.com
-dataclasses
-pasteaccount test@example.com
-pwnedpassword
+breaches, breach Adobe, breachedaccount test@example.com, dataclasses, pasteaccount test@example.com, pwnedpassword,
 
 
 Output - The tool will ask you to specify if you want to save the output to csv or display on console.
