@@ -24,13 +24,16 @@ Check out the animated gif included to operate this tool.
 
 Interative tool:
 ---------------
+```
 sindutrichyvijayakumar$ make tool
 go run -v ./cmd/...
 Interactive Shell For HaveIBeenPwned
 >>> help
+```
 
 Commands:
 ---------
+```
   breach               returns a single breach by breach name
                        Usage: breach <domain-name>
   breachedaccount      returns list of all breaches a particular account has been involved in
@@ -45,11 +48,20 @@ Commands:
   pasteaccount         returns all pastes for an account
                        Usage: pasteaccount <email-address>
   pwnedpassword        Check if a password is compromised or not
-                       Usage: pwnedpassword
+                       Usage: pwnedpassword 
+ ```
 
 Example Commands
 ----------------
-breaches, breach Adobe, breachedaccount test@example.com, dataclasses, pasteaccount test@example.com, pwnedpassword,
+```
+>> breaches 
+>> breach Adobe 
+>> breachedaccount test@example.com
+>> dataclasses
+>> pasteaccount 
+>> test@example.com
+>> pwnedpassword
+```
 
 
 Output - The tool will ask you to specify if you want to save the output to csv or display on console.
@@ -60,8 +72,18 @@ You can get the output in form of string or json object. Each of the following f
 
 APIs for this module
 -------------------
-GetBreach(parameter, service, domain, truncateResponse, includeUnverified string) returns ([]BreachResp, string, error) - Returns a list of breaches for an account
-GetSingleBreach(parameter, service, domain, truncateResponse, includeUnverified string)  returns (BreachResp, string, error) - returns list of all breaches a particular account has been involved in
-GetDataClasses(parameter, service, domain string) returns ([]string, string, error) - Returns data classes
-GetPasteAccount(parameter, service, domain string) returns ([]PasteResp, string, error) - Returns all pastes for an account
-IsPasswordCompromised(password string) - returns (bool, error) - Checks if password is compromised or not
+```
+GetBreach(parameter, service, domain, truncateResponse, includeUnverified string) returns ([]BreachResp, string, error) returns a list of breaches for an account
+
+GetSingleBreach(parameter, service, domain, truncateResponse, includeUnverified string)  returns (BreachResp, string, error)
+returns list of all breaches a particular account has been involved in
+
+GetDataClasses(parameter, service, domain string) returns ([]string, string, error) 
+returns data classes
+
+GetPasteAccount(parameter, service, domain string) returns ([]PasteResp, string, error) 
+returns all pastes for an account
+
+IsPasswordCompromised(password string) - returns (bool, error) 
+checks if password is compromised or not
+```
