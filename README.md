@@ -18,10 +18,6 @@ How to use?
 
 NOTE: Add ca.cer file to the same location from where you invoke the tool.
 
-Tool:
-----
-Check out the animated gif included to operate this tool.
-
 Interative tool:
 ---------------
 ```
