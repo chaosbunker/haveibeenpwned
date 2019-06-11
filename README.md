@@ -47,7 +47,7 @@ Commands:
   pwnedpassword        Check if a password is compromised or not
                        Usage: pwnedpassword
 
-Example Commands:
+Example Commands
 ----------------
 breaches
 breach Adobe
@@ -59,7 +59,7 @@ pwnedpassword
 
 Output - The tool will ask you to specify if you want to save the output to csv or display on console.
 
-Library:
+Library
 --------
 You can get the output in form of string or json object. Each of the following functions return err, add error checks when you are using this module.
 
